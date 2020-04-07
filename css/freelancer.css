@@ -34,6 +34,8 @@ header figure {
 
 
      header {
+           background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+       background-blend-mode: multiply,multiply;
       animation: colorchange 50s; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
       -webkit-animation: colorchange 50s; /* Chrome and Safari */
@@ -41,23 +43,6 @@ header figure {
       animation-iteration-count:infinite;
     }
 
-    @keyframes colorchange
-    {
-      0%   {background: #a31c1c;}
-      25%  {background: #e5b41f;}
-      50%  {background: #4d43ab;}
-      75%  {background: #18BC9C;}
-      100% {background: #a31c1c;}
-    }
-
-    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-    {
-      0%   {background: #a31c1c;}
-      25%  {background: #e5b41f;}
-      50%  {background: #4d43ab;}
-      75%  {background: #18BC9C;}
-      100% {background: #a31c1c;}
-    }
 p {
   font-size: 20px;
 }
